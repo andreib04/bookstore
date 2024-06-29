@@ -1,0 +1,51 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    border-radius: 15%;
+}
+
+.navbar_{
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_ .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar_ .logo a{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar_ .search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar_ .search-bar input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar_ .search-bar button{
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: white;
+    color: #4A148C;
+    border-radius: 5px;
+    cursor: pointer;
+}
