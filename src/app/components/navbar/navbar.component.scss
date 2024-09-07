@@ -8,7 +8,6 @@
 }
 
 .navbar_{
-    color: white;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -26,7 +25,7 @@
 .navbar_ .logo a{
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -38,6 +37,7 @@
 .navbar_ .search-bar input{
     padding: 5px;
     border-radius: 5px;
+    border-color: white;
 }
 
 .navbar_ .search-bar button{
@@ -45,7 +45,13 @@
     margin-left: 5px;
     border: none;
     background-color: white;
-    color: #4A148C;
+    color: blue;
     border-radius: 5px;
     cursor: pointer;
+    border-color: white;
+}
+
+.add-button{
+    margin-left: 10px;
+    border-radius: 10px;
 }

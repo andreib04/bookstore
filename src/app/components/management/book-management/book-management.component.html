@@ -1,0 +1,42 @@
+<div class="management-page-header">
+  <div class="text">
+    <p>Books Management</p>
+  </div>
+  <div class="nav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="/add-book">Add Book</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<p class="all">All Books</p>
+
+<div class="management-page-main">
+  <div class="book-list">
+    <ul>
+      <li>
+        <img
+          src="https://thumbs.dreamstime.com/b/open-book-isolated-white-16094903.jpg"
+          alt="Image not found"
+          class="book-image"
+        />
+        <div class="book-info">
+          <h2 class="book-title">Book title</h2>
+          <p class="book-author">Author</p>
+        </div>
+        <div class="action-buttons">
+          <button class="btn btn-success edit-button">
+            <a routerLink="/edit-book">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+          </button>
+          <button type="submit" class="btn btn-danger delete-button">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -15,7 +15,7 @@ export class LoginServiceService {
 
   isLoggedIn = false;
   baseURL: string = environment.baseURL;
-  apiPath = '/api/login/';
+  apiPath = '/api/login';
   private jwtHelper = new JwtHelperService();
 
   constructor(private httpClient: HttpClient) {}

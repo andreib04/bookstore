@@ -1,4 +1,4 @@
-<div class="navbar_">
+<div class="navbar_ navbar-dark bg-dark">
   <div class="container">
     <div class="logo">
       <a routerLink="home">Book Store</a>
@@ -27,5 +27,8 @@
         *ngIf="!loginService.isLoggedIn">Login</button>
         <button class="btn btn-danger ml-auto" (click)="logout()" *ngIf="loginService.isLoggedIn">Logout</button>
 
+        <button class="btn btn-danger add-button" routerLink="/book-management">  <!-- *ngIf="loginService.hasRole('Admin')" TODO ADD LATER--> 
+          Book Management
+        </button>
     </div>
 </nav>
