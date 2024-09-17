@@ -9,8 +9,8 @@ import { environment } from '../../environments/environment';
 })
 export class BooksService {
 
-  baseURL: string = environment.baseURL;
-  apiPath = '/api/books/';
+  baseURL = "https://localhost:7060";
+  apiPath = '/api/Books';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -18,7 +18,7 @@ export class BooksService {
     return this.httpClient.get<Book[]>(`${this.baseURL}${this.apiPath}`);
   }
 
-  getBook(): Observable<Book>{
+  getBook(id: number): Observable<Book>{
     return this.httpClient.get<Book>(`${this.baseURL}${this.apiPath}`);
   }
 

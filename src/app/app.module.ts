@@ -8,7 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { AddBookPageComponent } from './components/management/add-book-page/add-book-page.component';
 import { BookManagementComponent } from './components/management/book-management/book-management.component';
 import { EditBookComponent } from './components/management/edit-book/edit-book.component';
@@ -32,7 +32,8 @@ import { EditBookComponent } from './components/management/edit-book/edit-book.c
     HttpClientModule,
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

@@ -15,9 +15,19 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
 
   //Management
-  { path: 'book-management', component: BookManagementComponent },
-  { path: 'add-book', component: AddBookPageComponent },
-  { path: 'edit-book', component: EditBookComponent }
+  { path: 'book-management', 
+    component: BookManagementComponent,
+    children: [
+      {
+        path: 'add-book',
+        component: AddBookPageComponent
+      },
+      {
+        path: 'edit-book/:id',
+        component: EditBookComponent
+      }
+    ] 
+  },
 ];
 
 @NgModule({
